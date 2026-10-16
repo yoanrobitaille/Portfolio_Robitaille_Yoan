@@ -12,6 +12,13 @@
     .info_form {
         display: grid;
         grid-template-columns: 1fr 1.7fr;
+        @media (width<= $breakpoint-sm) {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            .infos {
+                gap: 20px;
+            }
+        }
     }
 }
 
@@ -87,6 +94,10 @@
     padding: var(--input-padding);
     outline: none;
     width: 100%;
+    margin-top: 7px;
+    @media (width<= $breakpoint-sm) {
+        padding: 0.7em;
+    }
 
     &:-webkit-autofill,
     &-webkit-autofill:active {

@@ -10,10 +10,38 @@
         flex-direction: column;
         gap: 20px;
     }
+
+    .voir {
+        font-size: var(--font-size-h3);
+        margin-top: 25px;
+        padding: 16px 32px;
+        border: var(--color-secondary) 2px solid;
+        width: fit-content;
+        background-color: var(--color-secondary);
+        color: var(--color-black);
+        font-weight: 500;
+        &:hover {
+            background-color: var(--color-bg-primary);
+            color: var(--color-secondary);
+        }
+    }
     .head {
         display: flex;
         gap: 20px;
         align-items: center;
+        .start {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        @media (width <= $breakpoint-sm) {
+            flex-direction: column;
+            .start {
+                align-self: start;
+                display: flex;
+                gap: 20px;
+            }
+        }
     }
     .tag {
         color: var(--color-secondary);
@@ -33,6 +61,10 @@
     .wrapper {
         display: flex;
         justify-content: space-between;
+        @media (width <= $breakpoint-sm) {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
     h3 {
         text-transform: uppercase;
@@ -77,12 +109,18 @@
 
 .etapes {
     padding: 50px 0;
+    @media (width <= $breakpoint-sm) {
+        padding: 20px 0;
+    }
 
     .card {
         padding: 50px 0;
         display: flex;
         flex-direction: column;
         gap: 24px;
+        @media (width <= $breakpoint-sm) {
+            padding: 20px 0;
+        }
     }
     span {
         font-weight: 800;
@@ -91,11 +129,23 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 24px;
+        @media (width<= $breakpoint-md) {
+            grid-template-columns: 1fr;
+        }
+        &.defi {
+            @media (width<= $breakpoint-sm) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
     .left {
         display: flex;
         flex-direction: column;
         gap: 60px;
+        @media (width<= $breakpoint-md) {
+            gap: 24px;
+        }
     }
     .interieur2 {
         display: flex;
@@ -106,11 +156,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (width<= $breakpoint-md) {
+            flex-direction: column;
+            gap: 24px;
+            align-items: start;
+        }
         .desc {
             width: 50%;
+            @media (width<= $breakpoint-md) {
+                width: 100%;
+            }
         }
         .tags {
             flex-direction: row;
+            @media (width<= $breakpoint-sm) {
+                flex-direction: column;
+            }
             .tag {
                 height: fit-content;
             }
@@ -125,6 +186,14 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
+        @media (width<= $breakpoint-md) {
+            flex-direction: row;
+            justify-content: center;
+        }
+        @media (width<= $breakpoint-sm) {
+            flex-direction: column;
+            justify-content: unset;
+        }
         .tag {
             border-top: 2px solid var(--color-secondary);
             border-left: 2px solid var(--color-secondary);
@@ -136,6 +205,15 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+        img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            @media (width<= $breakpoint-sm) {
+                height: 175px;
+            }
+        }
     }
     video {
         max-width: 584px;
@@ -143,7 +221,7 @@
         object-fit: cover;
     }
     .swiper {
-        width: 1000px;
+        width: 100%;
         height: 100%;
         .swiper-slide {
             img {
@@ -158,10 +236,16 @@
     top: 5%;
     width: fit-content;
     height: fit-content;
-    left: 92%;
+    left: 91%;
     font-size: 25px;
     color: var(--color-secondary);
     text-shadow: var(--color-bg-secondary) 0 0 5px;
+    display: flex;
+    gap: 7px;
+    @media (width<= $breakpoint-sm) {
+        font-size: 18px;
+        left: 88%;
+    }
 }
 /*====================================================================================================================================
 ======== MODALE ===========
@@ -194,8 +278,8 @@
         justify-content: center;
         align-items: center;
         img {
-            width: 80%;
-            max-width: 900px;
+            width: 90%;
+            max-width: 1100px;
         }
         .modaltxt {
             margin-top: 1em;
@@ -256,6 +340,9 @@
         h3 {
             font-size: 32px;
             font-weight: 500;
+            @media (width <= $breakpoint-sm) {
+                font-size: 25px;
+            }
         }
         &:hover {
             gap: 20px;

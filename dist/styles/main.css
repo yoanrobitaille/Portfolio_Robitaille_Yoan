@@ -1458,10 +1458,6 @@ a.disabled {
     width: fit-content;
   }
 }
-.footer .wrapper .socials li .social_icon,
-.footer .wrapper .socials li .nom {
-  font-size: 18px;
-}
 .footer .wrapper .credit {
   display: flex;
   flex-direction: column;
@@ -1528,6 +1524,11 @@ a.disabled {
     padding: 200px 0 50px;
   }
 }
+@media (width >= 1024px) {
+  .nav {
+    flex-direction: row;
+  }
+}
 .nav-is-active .nav {
   transform: translateY(0);
 }
@@ -1559,7 +1560,7 @@ a.disabled {
   }
 }
 .nav .reseaux {
-  display: none;
+  display: flex;
   margin-top: auto;
   gap: 10px;
 }
@@ -1571,14 +1572,11 @@ a.disabled {
 .nav .reseaux .social .social_icon {
   font-size: 22px;
 }
-@media (width <= 1024px) {
-  .nav .reseaux {
-    display: flex;
-  }
-}
-@media screen and (min-width: 1024px) {
+@media (width >= 1024px) {
   .nav {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 20px;
     background: unset;
     position: relative;
     height: auto;
@@ -1591,19 +1589,25 @@ a.disabled {
     flex-direction: row;
     transform: translateY(0);
   }
+  .nav .social {
+    padding: 2px !important;
+  }
+  .nav .social .social_icon {
+    font-size: 18px;
+  }
   .nav {
     z-index: 2;
   }
 }
-
-li {
+.nav li {
   position: relative;
 }
-li:hover {
+.nav li:hover {
   color: inherit;
+  border-color: var(--color-secondary);
 }
 @media (width <= 1024px) {
-  li {
+  .nav li {
     font-size: var(--font-size-h2) !important;
     color: var(--color-white);
     position: relative;
@@ -2130,7 +2134,7 @@ img.swipeimage {
   position: fixed;
   top: 0;
   left: 0;
-  width: 350px;
+  width: 550px;
   height: -moz-fit-content;
   height: fit-content;
   -o-object-fit: cover;
@@ -2154,10 +2158,40 @@ img.swipeimage {
   flex-direction: column;
   gap: 20px;
 }
+.projet_hero .voir {
+  font-size: var(--font-size-h3);
+  margin-top: 25px;
+  padding: 16px 32px;
+  border: var(--color-secondary) 2px solid;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--color-secondary);
+  color: var(--color-black);
+  font-weight: 500;
+}
+.projet_hero .voir:hover {
+  background-color: var(--color-bg-primary);
+  color: var(--color-secondary);
+}
 .projet_hero .head {
   display: flex;
   gap: 20px;
   align-items: center;
+}
+.projet_hero .head .start {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (width <= 768px) {
+  .projet_hero .head {
+    flex-direction: column;
+  }
+  .projet_hero .head .start {
+    align-self: start;
+    display: flex;
+    gap: 20px;
+  }
 }
 .projet_hero .tag {
   color: var(--color-secondary);
@@ -2177,6 +2211,12 @@ img.swipeimage {
 .info .wrapper {
   display: flex;
   justify-content: space-between;
+}
+@media (width <= 768px) {
+  .info .wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .info h3 {
   text-transform: uppercase;
@@ -2219,11 +2259,21 @@ img.swipeimage {
 .etapes {
   padding: 50px 0;
 }
+@media (width <= 768px) {
+  .etapes {
+    padding: 20px 0;
+  }
+}
 .etapes .card {
   padding: 50px 0;
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+@media (width <= 768px) {
+  .etapes .card {
+    padding: 20px 0;
+  }
 }
 .etapes span {
   font-weight: 800;
@@ -2233,10 +2283,26 @@ img.swipeimage {
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
+@media (width <= 1024px) {
+  .etapes .interieur {
+    grid-template-columns: 1fr;
+  }
+}
+@media (width <= 768px) {
+  .etapes .interieur.defi {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .etapes .left {
   display: flex;
   flex-direction: column;
   gap: 60px;
+}
+@media (width <= 1024px) {
+  .etapes .left {
+    gap: 24px;
+  }
 }
 .etapes .interieur2 {
   display: flex;
@@ -2248,11 +2314,28 @@ img.swipeimage {
   justify-content: space-between;
   align-items: center;
 }
+@media (width <= 1024px) {
+  .etapes .left2 {
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+  }
+}
 .etapes .left2 .desc {
   width: 50%;
 }
+@media (width <= 1024px) {
+  .etapes .left2 .desc {
+    width: 100%;
+  }
+}
 .etapes .left2 .tags {
   flex-direction: row;
+}
+@media (width <= 768px) {
+  .etapes .left2 .tags {
+    flex-direction: column;
+  }
 }
 .etapes .left2 .tags .tag {
   height: -moz-fit-content;
@@ -2268,6 +2351,18 @@ img.swipeimage {
   flex-direction: column;
   gap: 25px;
 }
+@media (width <= 1024px) {
+  .etapes .tags {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (width <= 768px) {
+  .etapes .tags {
+    flex-direction: column;
+    justify-content: unset;
+  }
+}
 .etapes .tags .tag {
   border-top: 2px solid var(--color-secondary);
   border-left: 2px solid var(--color-secondary);
@@ -2280,6 +2375,17 @@ img.swipeimage {
   flex-direction: column;
   gap: 10px;
 }
+.etapes .gallery img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (width <= 768px) {
+  .etapes .gallery img {
+    height: 175px;
+  }
+}
 .etapes video {
   max-width: 584px;
   max-height: 326px;
@@ -2287,7 +2393,7 @@ img.swipeimage {
      object-fit: cover;
 }
 .etapes .swiper {
-  width: 1000px;
+  width: 100%;
   height: 100%;
 }
 .etapes .swiper .swiper-slide img {
@@ -2303,10 +2409,18 @@ img.swipeimage {
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  left: 92%;
+  left: 91%;
   font-size: 25px;
   color: var(--color-secondary);
   text-shadow: var(--color-bg-secondary) 0 0 5px;
+  display: flex;
+  gap: 7px;
+}
+@media (width <= 768px) {
+  .swiper-pagination-fraction {
+    font-size: 18px;
+    left: 88%;
+  }
 }
 
 /*====================================================================================================================================
@@ -2341,8 +2455,8 @@ img.swipeimage {
   align-items: center;
 }
 .modal .modalContent img {
-  width: 80%;
-  max-width: 900px;
+  width: 90%;
+  max-width: 1100px;
 }
 .modal .modalContent .modaltxt {
   margin-top: 1em;
@@ -2400,6 +2514,11 @@ img.swipeimage {
 .final .retour h3 {
   font-size: 32px;
   font-weight: 500;
+}
+@media (width <= 768px) {
+  .final .retour h3 {
+    font-size: 25px;
+  }
 }
 .final .retour:hover {
   gap: 20px;
@@ -2484,6 +2603,15 @@ img.swipeimage {
   display: grid;
   grid-template-columns: 1fr 1.7fr;
 }
+@media (width <= 768px) {
+  .contact .info_form {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .contact .info_form .infos {
+    gap: 20px;
+  }
+}
 
 .infos {
   display: flex;
@@ -2555,6 +2683,12 @@ img.swipeimage {
   padding: var(--input-padding);
   outline: none;
   width: 100%;
+  margin-top: 7px;
+}
+@media (width <= 768px) {
+  .input__element {
+    padding: 0.7em;
+  }
 }
 .input__element:-webkit-autofill, .input__element-webkit-autofill:active {
   -webkit-box-shadow: inset 0 0 0 2px var(--color-white) !important;

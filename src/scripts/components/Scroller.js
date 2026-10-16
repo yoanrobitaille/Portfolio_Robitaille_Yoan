@@ -58,17 +58,21 @@ export default class Scroller {
   initPins() {
     console.log('pin');
     const pinnedItems = this.element.querySelectorAll('.js-pinned');
-    for (let i = 0; i < pinnedItems.length; i++) {
-      const pinnedItem = pinnedItems[i];
-      ScrollTrigger.create({
-        pin: pinnedItem,
-        trigger: pinnedItem.parentElement,
-        pinSpacing: false,
-        start: '0 10%',
-        end: '90% 70%',
-        // markers: true,
-      });
-    }
+    ScrollTrigger.matchMedia({
+      '(min-width:1024px)': () => {
+        for (let i = 0; i < pinnedItems.length; i++) {
+          const pinnedItem = pinnedItems[i];
+          ScrollTrigger.create({
+            pin: pinnedItem,
+            trigger: pinnedItem.parentElement,
+            pinSpacing: false,
+            start: '0 10%',
+            end: '90% 70%',
+            // markers: true,
+          });
+        }
+      },
+    });
   }
 
   /*initHoriz() {

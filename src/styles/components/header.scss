@@ -56,6 +56,9 @@
     @media (width<= $breakpoint-md) {
         padding: 200px 0 50px;
     }
+    @media (width >= $breakpoint-md) {
+        flex-direction: row;
+    }
     .nav-is-active & {
         transform: translateY(0);
     }
@@ -87,7 +90,7 @@
     }
 
     .reseaux {
-        display: none;
+        display: flex;
         margin-top: auto;
         gap: 10px;
         .social {
@@ -98,12 +101,13 @@
                 font-size: 22px;
             }
         }
-        @media (width <= $breakpoint-md) {
-            display: flex;
+        @media (width>= $breakpoint-md) {
         }
     }
-    @media screen and (min-width: $breakpoint-md) {
-        display: block;
+    @media (width >= $breakpoint-md) {
+        display: flex;
+        align-items: center;
+        gap: 20px;
         background: unset;
         position: relative;
         height: auto;
@@ -115,20 +119,27 @@
             flex-direction: row;
             transform: translateY(0);
         }
+        .social {
+            padding: 2px !important;
+            .social_icon {
+                font-size: 18px;
+            }
+        }
         z-index: 2;
     }
-}
-li {
-    position: relative;
-
-    &:hover {
-        color: inherit;
-    }
-    @media (width <= $breakpoint-md) {
-        font-size: var(--font-size-h2) !important;
-        color: var(--color-white);
+    li {
         position: relative;
-        text-transform: none;
+
+        &:hover {
+            color: inherit;
+            border-color: var(--color-secondary);
+        }
+        @media (width <= $breakpoint-md) {
+            font-size: var(--font-size-h2) !important;
+            color: var(--color-white);
+            position: relative;
+            text-transform: none;
+        }
     }
 }
 .header__toggle {
