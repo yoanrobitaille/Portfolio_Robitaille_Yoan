@@ -57,6 +57,9 @@
                 gap: 20px;
                 border-color: var(--color-secondary);
             }
+            @media (width <= $breakpoint-sm) {
+                font-size: 24px;
+            }
         }
         .media {
             width: 426px;

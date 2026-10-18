@@ -55,6 +55,9 @@
     transition: all 0.6s $ease-out-expo;
     @media (width<= $breakpoint-md) {
         padding: 200px 0 50px;
+        h3 {
+            display: none;
+        }
     }
     @media (width >= $breakpoint-md) {
         flex-direction: row;

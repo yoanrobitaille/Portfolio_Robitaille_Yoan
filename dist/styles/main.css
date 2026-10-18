@@ -1523,6 +1523,9 @@ a.disabled {
   .nav {
     padding: 200px 0 50px;
   }
+  .nav h3 {
+    display: none;
+  }
 }
 @media (width >= 1024px) {
   .nav {
@@ -1738,6 +1741,11 @@ a.disabled {
 .hub .hub_contenu .btn:hover {
   gap: 20px;
   border-color: var(--color-secondary);
+}
+@media (width <= 768px) {
+  .hub .hub_contenu .btn {
+    font-size: 24px;
+  }
 }
 .hub .hub_contenu .media {
   width: 426px;
@@ -2135,8 +2143,7 @@ img.swipeimage {
   top: 0;
   left: 0;
   width: 550px;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 230px;
   -o-object-fit: cover;
      object-fit: cover;
   transform: translateX(-50%) translateY(-50%);
@@ -2201,6 +2208,16 @@ img.swipeimage {
   width: -moz-fit-content;
   width: fit-content;
 }
+.projet_hero .voirs {
+  display: flex;
+  gap: 20px;
+}
+@media (width <= 768px) {
+  .projet_hero .voirs {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 
 /*====================================================================================================================================
 ======== INFO ===========
@@ -2254,7 +2271,7 @@ img.swipeimage {
 .presentation img {
   border: 2px solid var(--color-border);
   width: 100%;
-  height: 80vh;
+  max-height: 80vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 28%;
@@ -2394,6 +2411,17 @@ img.swipeimage {
     height: 175px;
   }
 }
+.etapes .gallery video {
+  max-width: 658px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (width <= 1024px) {
+  .etapes .gallery video {
+    width: 100%;
+  }
+}
 .etapes video {
   max-width: 584px;
   max-height: 326px;
@@ -2402,7 +2430,17 @@ img.swipeimage {
 }
 .etapes .swiper {
   width: 100%;
-  height: 60vh;
+  max-height: 60vh;
+  height: 100%;
+}
+@media (width <= 1024px) {
+  .etapes .swiper {
+    max-height: 30vh;
+  }
+}
+.etapes .swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
 }
 .etapes .swiper .swiper-slide img {
   width: 100%;

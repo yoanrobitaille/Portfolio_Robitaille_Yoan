@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Yoan Robitaille</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body data-component="Scrolly">
+    <div class="cursor" data-component="Cursor"></div>
+
+    <div class="transition" data-component="Transition">
+        <div class="transition-row row-1">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="transition-row row-2">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+
+
+    <header class="header" data-component="Header" data-always-show>
+        <div class="wrapper">
+            <a href="index.html" class="logo">YR</a>
+            <nav class="nav">
+                <ul>
+                    <a href="index.html" class="hub_mobile">
+                        <li>Mon hub</li>
+                    </a>
+                    <a href="propos.html">
+                        <li>À propos</li>
+                    </a>
+                    <a href="" class="scrollto">
+                        <li>Projets</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+                <h3>|</h3>
+                <div class="reseaux">
+                    <a target="_blank" href="https://www.linkedin.com/in/yoan-robitaille-41281a43a/">
+                        <li class="social">
+                            <div class="social_icon">[in]</div>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://github.com/yoyorobi">
+                        <li class="social">
+                            <div class="social_icon">[gh]</div>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/y.o.a.n_1802/">
+                        <li class="social">
+                            <div class="social_icon">[ig]</div>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/@yoanrobitaille8711">
+                        <li class="social">
+                            <div class="social_icon">[yt]</div>
+                        </li>
+                    </a>
+                </div>
+            </nav>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <hr class="hr_secondary">
+    </header>
+
+    <section class="modale" data-component="Modale">
+        <div class="wrapper">
+            <div class="modal">
+                <span class="close">
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </span>
+                <div class="modalContent">
+                    <img src="" alt="" class="modalImg" />
+                    <span class="modaltxt"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <canvas id="cursor-grid" data-component="Grid"></canvas>
+    <img class="swipeimage" alt="">
+    <div id="smooth-wrapper" data-component="Scroller" data-pin-items="true">
+        <div id="smooth-content">
+
+
+
+            <!-- 
+        mettre background sur texte en hover oranges
+        /// Enlever le sroller end sur fiche projets
+        /// Tags dans 02 préparation du visuel
+        ///  02 changer les boutons de carousell et autoplay maybe
+        /// changer opacité du grid 
+        /// bordure bas sur photo a propos
+        Sur vidéo de vélo et auto le son en fade in
+        /// sur mobile rajouter padding sur hero
+        à propos, sur grandeur lapotop mettre photo a droite et texte en bas
+        /// descendre gtr
+        préparation visuel pixelisé
+
+        -->
+            <section class="projet_hero">
+                <div class="wrapper">
+                    <div class="head">
+                        <div class="start">
+                            <h3>01</h3>
+                            <svg class="icon icon--sm">
+                                <use xlink:href="#icon-square"></use>
+                            </svg>
+                        </div>
+                        <h1>Jeu 1D sur bande DEL</h1>
+                    </div>
+
+                    <p class="tag">Interactif</p>
+                    <div class="voirs">
+                        <a href="https://github.com/yoyorobi/Jeu-1D-sur-bande-DEL" target="_blank" class="voir">
+                            Voir le projet
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-Arrow"></use>
+                            </svg>
+                        </a>
+                        <a href="assets/img/del/del_affiche.pdf" target="_blank" class="voir">
+                            Voir l'affiche
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-Arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="hr_secondary" />
+            <section class="presentation">
+                <div class="wrapper">
+                    <img src="assets/img/del/del_jeu.png" alt="Projection murale crops" />
+                </div>
+            </section>
+
+            <hr class="hr_primary" />
+
+            <section class="info">
+                <div class="wrapper">
+                    <div class="cards left">
+                        <div class="card">
+                            <h3>Contexte</h3>
+                            <p>
+                                Projet réalisé dans le cadre du cours de Médias interactifs (Techniques d’intégration multimédia, Cégep Édouard-Montpetit). Le mandat :
+                                concevoir une expérience interactive sur une bande DEL 1D. J’ai créé un tir à la corde à deux joueurs sur une bande de 60 DEL — chacun
+                                martèle son bouton pour pousser la lumière vers le camp adverse.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Outils utilisés</h3>
+                            <div class="imgs">
+                                <img src="assets/img/td.jpg" alt="TouchDesigner" />
+                                <img src="assets/img/led.png" alt="LED" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards right">
+                        <div class="card">
+                            <h3>Rôles</h3>
+                            <p>Projet solo : conception du jeu, direction visuelle et programmation.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Crédits</h3>
+                            <p>
+                                <span class="gras">Yoan Robitaille</span>
+                                : Conception, design et programmation
+                                <br />
+                                <span class="gras">Médias et ressources externes :</span>
+                                <br />
+                                • Sons de victoire (“Rouge a gagné” / “Bleu a gagné”) générés par IA : Minimax
+                                <br />
+                                • Son de jeu : Tense Drum Loop par DRAGON-STUDIO — Pixabay
+                                <br />
+                                • Son d’intro : Soft Piano Loop par Ncone — Pixabay
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Utilisation d'IA</h3>
+                            <p>L’intelligence artificielle a été utilisée pour générer les sons de victoire ainsi que pour le débogage de code.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="hr_secondary" />
+
+            <section class="etapes" data-pin-items>
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="interieur">
+                            <div class="left js-pinned">
+                                <h1>01 - Idéation</h1>
+                                <p class="desc">
+                                    J’ai choisi un jeu simple à comprendre en quelques secondes : un
+                                    <span>tir à la corde</span>
+                                    où chaque joueur pousse la
+                                    <span>lumière</span>
+                                    vers le camp adverse à grands coups de bouton.
+                                </p>
+                                <div class="tags">
+                                    <p class="tag">Idéation</p>
+                                    <p class="tag">Game design</p>
+                                    <p class="tag">Simplicité</p>
+                                </div>
+                            </div>
+                            <div class="gallery">
+                                <img src="assets/img/del/del_inspi1.png" alt="Image d'inspiration 1" />
+                                <img src="assets/img/del/del_inspi2.png" alt="Image d'inspiration 2" />
+                                <img src="assets/img/del/del_vue.jpg" alt="Mon personnage en néon" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr_secondary" />
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="interieur">
+                            <div class="left js-pinned">
+                                <h1>02 - Logique de jeu</h1>
+                                <p class="desc">
+                                    J’ai programmé la
+                                    <span>position de la lumière</span>
+                                    sur la bande selon les appuis de chaque joueur, créant l’effet de
+                                    <span>bras de fer</span>
+                                    visuel entre les deux camps.
+                                </p>
+                                <div class="tags">
+                                    <p class="tag">TouchDesigner</p>
+                                    <p class="tag">Prog nodale</p>
+                                    <p class="tag">Logique de jeu</p>
+                                </div>
+                            </div>
+                            <div class="gallery">
+                                <a href="assets/img/del/del_affiche.pdf" target="_blank">
+                                    <img src="assets/img/del/del_affiche.png" alt="Image d'inspiration 1" />
+                                </a>
+                                <img src="assets/img/del/del_prog-tout.png" alt="Image d'inspiration 2" />
+                                <img src="assets/img/del/del_prog-visuel.png" alt="Mon personnage en néon" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr_secondary" />
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="interieur">
+                            <div class="left js-pinned">
+                                <h1>03 - États du jeu</h1>
+                                <p class="desc">
+                                    J’ai structuré
+                                    <span>l’expérience</span>
+                                    en trois états : une
+                                    <span>intro</span>
+                                    (écran d’attente et présentation),
+                                    <span>la phase de jeu</span>
+                                    (le tir à la corde), puis une
+                                    <span>conclusion affichant le gagnant.</span>
+                                </p>
+                                <div class="tags">
+                                    <p class="tag">Structure</p>
+                                    <p class="tag">États</p>
+                                    <p class="tag">Flux utilisateur</p>
+                                </div>
+                            </div>
+                            <div class="gallery">
+                                <img src="assets/img/del/del_jeu.png" alt="Écran autonome" />
+                                <video src="assets/img/del/del_bleu.mp4" muted autoplay loop></video>
+                                <video src="assets/img/del/del_intro.mp4" muted autoplay loop></video>
+                                <video src="assets/img/del/del_into-jeu.mp4" muted autoplay loop></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr_secondary" />
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="interieur">
+                            <div class="left js-pinned">
+                                <h1>04 - Identité visuelle</h1>
+                                <p class="desc">
+                                    J’ai développé une
+                                    <span>identité visuelle</span>
+                                    inspirée des dragons,
+                                    <span>feu contre eau,</span>
+                                    pour donner du caractère à l’affrontement entre les deux joueurs.
+                                </p>
+                                <div class="tags">
+                                    <p class="tag">Direction artistique</p>
+                                    <p class="tag">Thématique</p>
+                                    <p class="tag">Illustration</p>
+                                </div>
+                            </div>
+                            <div class="gallery">
+                                <a href="assets/img/del/del_affiche.pdf" target="_blank">
+                                    <img src="assets/img/del/del_affiche.png" alt="Inspiration du lightsaber" />
+                                </a>
+                                <img src="assets/img/del/del_bouton.jpg" alt="Programmation du lightsaber" />
+                                <img src="assets/img/del/del_vue.jpg" alt="Programmation du background" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr_secondary" />
+                <div class="wrapper">
+                    <div class="card">
+                        <h1>05 - Tests</h1>
+                        <div class="interieur defi">
+                            <div class="left">
+                                <p class="desc">
+                                    J’ai simulé les
+                                    <span>boutons physiques</span>
+                                    au clavier (touches 1 et 2) pour tester le jeu sur les 60 DEL avant l’intégration des contrôleurs physiques.
+                                </p>
+                            </div>
+                            <div class="gallery">
+                                <img src="assets/img/del/del_tout.jpg" alt="Programmation du switch entre autonome et avec le personnage" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr_secondary" />
+            </section>
+
+            <section class="modale" data-component="Modale">
+                <div class="wrapper">
+                    <div class="modal">
+                        <span class="close">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-close"></use>
+                            </svg>
+                        </span>
+                        <div class="modalContent">
+                            <img src="" alt="" class="modalImg" />
+                            <span class="modaltxt"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="final">
+                <div class="wrapper">
+                    <div class="resultat">
+                        <h1>Résultat final</h1>
+                        <div class="video" data-component="Youtube" data-no-controls data-video-id="SZrOSpC5e14">
+                            <div class="video__media js-video"></div>
+                        </div>
+                    </div>
+                    <a href="index.html#projets" class="retour">
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-back"></use>
+                        </svg>
+                        <h3 href="index.html#projets" class="back">Tous les projets</h3>
+                    </a>
+                </div>
+            </section>
+            <hr class="hr_primary" />
+            <footer class="footer">
+                <div class="wrapper">
+                    <h2>On travaille ensemble? <span class="h2_footer">Je cherche un stage en création interactive.</span></h2>
+                    <ul class="socials">
+                        <a target="_blank" href="https://www.linkedin.com/in/yoan-robitaille-41281a43a/">
+                            <li class="social">
+                                <div class="social_icon">[in]</div>
+                                <div class="nom">LinkedIn</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="https://github.com/yoyorobi">
+                            <li class="social">
+                                <div class="social_icon">[gh]</div>
+                                <div class="nom">GitHub</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/@yoanrobitaille8711">
+                            <li class="social">
+                                <div class="social_icon">[yt]</div>
+                                <div class="nom">YouTube</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="mailto:yoan.robitaille@hotmail.com">
+                            <li class="social">
+                                <div class="social_icon">[@]</div>
+                                <div class="nom">E-mail</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="assets/cv/cv_yoan_robitaille_clair.pdf">
+                            <li class="social">
+                                <div class="social_icon">[cv]</div>
+                                <div class="nom">Curriculum vitae</div>
+                            </li>
+                        </a>
+                    </ul>
+                    <div class="credit">
+                        <p>© 2026 Yoan Robitaille</p>
+                        <p class="mini">Ce site a été conçu avec l’aide d’outils d’intelligence artificielle pour l’idéation visuelle, la rédaction en partie, ainsi que pour le débogage de certaines parties du code (JavaScript). L’intégration HTML/CSS, la structure du site et son adaptation responsive ont été réalisées par moi-même.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

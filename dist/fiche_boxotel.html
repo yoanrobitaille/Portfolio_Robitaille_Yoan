@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Yoan Robitaille</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body data-component="Scrolly">
+    <div class="cursor" data-component="Cursor"></div>
+
+    <div class="transition" data-component="Transition">
+        <div class="transition-row row-1">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="transition-row row-2">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+
+
+    <header class="header" data-component="Header" data-always-show>
+        <div class="wrapper">
+            <a href="index.html" class="logo">YR</a>
+            <nav class="nav">
+                <ul>
+                    <a href="index.html" class="hub_mobile">
+                        <li>Mon hub</li>
+                    </a>
+                    <a href="propos.html">
+                        <li>À propos</li>
+                    </a>
+                    <a href="" class="scrollto">
+                        <li>Projets</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+                <h3>|</h3>
+                <div class="reseaux">
+                    <a target="_blank" href="https://www.linkedin.com/in/yoan-robitaille-41281a43a/">
+                        <li class="social">
+                            <div class="social_icon">[in]</div>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://github.com/yoyorobi">
+                        <li class="social">
+                            <div class="social_icon">[gh]</div>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/y.o.a.n_1802/">
+                        <li class="social">
+                            <div class="social_icon">[ig]</div>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/@yoanrobitaille8711">
+                        <li class="social">
+                            <div class="social_icon">[yt]</div>
+                        </li>
+                    </a>
+                </div>
+            </nav>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <hr class="hr_secondary">
+    </header>
+
+    <section class="modale" data-component="Modale">
+        <div class="wrapper">
+            <div class="modal">
+                <span class="close">
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </span>
+                <div class="modalContent">
+                    <img src="" alt="" class="modalImg" />
+                    <span class="modaltxt"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <canvas id="cursor-grid" data-component="Grid"></canvas>
+    <img class="swipeimage" alt="">
+    <div id="smooth-wrapper" data-component="Scroller" data-pin-items="true">
+        <div id="smooth-content">
+
+
+
+            <!-- 
+        mettre background sur texte en hover oranges
+        /// Enlever le sroller end sur fiche projets
+        /// Tags dans 02 préparation du visuel
+        ///  02 changer les boutons de carousell et autoplay maybe
+        /// changer opacité du grid 
+        /// bordure bas sur photo a propos
+        Sur vidéo de vélo et auto le son en fade in
+        /// sur mobile rajouter padding sur hero
+        à propos, sur grandeur lapotop mettre photo a droite et texte en bas
+        /// descendre gtr
+        préparation visuel pixelisé
+
+        -->
+            <section class="projet_hero">
+                <div class="wrapper">
+                    <div class="head">
+                        <div class="start">
+                            <h3>01</h3>
+                            <svg class="icon icon--sm">
+                                <use xlink:href="#icon-square"></use>
+                            </svg>
+                        </div>
+                        <h1>Design, amélioration et intégration du site web Boxotel</h1>
+                    </div>
+
+                    <p class="tag">Dev web</p>
+                    <div class="voirs">
+                        <a href="https://github.com/yoyorobi/Boxotel" target="_blank" class="voir">
+                            Voir le projet
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-Arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="hr_secondary" />
+            <section class="presentation">
+                <div class="wrapper">
+                    <img src="assets/img/bo/bo_desktop-accueil.jpg" alt="Accueil de Boxotel" />
+                </div>
+            </section>
+
+            <hr class="hr_primary" />
+
+            <section class="info">
+                <div class="wrapper">
+                    <div class="cards left">
+                        <div class="card">
+                            <h3>Contexte</h3>
+                            <p>
+                                Travail pratique réalisé en équipe de deux (avec Olivier Georges) dans le cadre du cours Conception Web IV, au Cégep Édouard-Montpetit. Le
+                                mandat : reconstruire en HTML/SCSS/JS réactif la maquette Figma de Boxotel conçue préalablement dans le cours Design d’expérience, en
+                                réutilisant notre librairie de composantes TimTools.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Outils utilisés</h3>
+                            <div class="imgs">
+                                <img src="assets/img/figma.png" alt="Photoshop" />
+                                <img src="assets/img/html.png" alt="HTML" />
+                                <img src="assets/img/css.png" alt="CSS" />
+                                <img src="assets/img/js.png" alt="Javascript" />
+                                <img src="assets/img/github.png" alt="Github" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards right">
+                        <div class="card">
+                            <h3>Rôles</h3>
+                            <p>
+                                Travail d’équipe avec
+                                <span>Olivier Georges.</span>
+                                <br />
+                                <span class="gras">Yoan Robitaille</span>
+                                : Design de la page d'accueil, chambres, fiche de chambre et page service, intégrations HTML + CSS
+                                <span class="gras">Olivier Georges</span>
+                                : Design de la page services en mobile, intégration HTML + CSS
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Crédits</h3>
+                            <p>
+                                <span class="gras">Yoan Robitaille</span>
+                                : Intégration (Header, Footer, Accueil, Liste des chambres, Carousel, YouTube, Component Factory, direction visuelle) Design complet de
+                                toutes les pages
+                                <br />
+                                <span class="gras">Olivier Georges</span>
+                                : Intégration (Page Services, Détail d’une chambre, Scrolly, Menu plein écran, Infolettre, Drawer, Formulaire)
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Utilisation d'IA</h3>
+                            <p>
+                                L’intelligence artificielle a été utilisée pour le débogage de code, notamment les conflits de positionnement CSS, la configuration du
+                                carousel Swiper et la mise en page du header.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="hr_secondary" />
+
+            <section class="etapes" data-pin-items>
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="interieur">
+                            <div class="left js-pinned">
+                                <h1>01 - Design complet</h1>
+                                <p class="desc">
+                                    J’ai conçu l’ensemble de la maquette Figma de Boxotel dans le cadre de mon cours de
+                                    <span>Design d’expérience</span>
+                                    : structure de deux pages (accueil, liste des chambres), hiérarchie visuelle, palette et composantes, avant même d’entamer
+                                    l’intégration. Par la suite,
+                                    <span>moi et Olivier</span>
+                                    avons finaliser le design des pages Services et Détails d’une chambre
+                                </p>
+                                <div class="tags">
+                                    <p class="tag">Figma</p>
+                                    <p class="tag">UX/UI</p>
+                                    <p class="tag">Direction artistique</p>
+                                </div>
+                            </div>
+                            <div class="gallery">
+                                <img src="assets/img/bo/bo_maquette_accueil.jpg" alt="Maquette des pages accueil et chambres" />
+                                <img src="assets/img/bo/bo_maquette-fiche.jpg" alt="Maqutte des pages fiche chambre et services" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr_secondary" />
+                <div class="wrapper">
+                    <div class="card">
+                        <h1>02 - Codage HTML/CSS</h1>
+                        <div class="interieur2">
+                            <div class="left2">
+                                <p class="desc">
+                                    Olivier et moi avons intégré la structure
+                                    <span>HTML et les styles SCSS</span>
+                                    des
+                                    <span>quatre pages à partir de la maquette,</span>
+                                    en réutilisant les gabarits de notre librairie TimTools pour garder une base cohérente entre nos sections respectives.
+                                </p>
+                                <div class="tags">
+                                    <p class="tag">HTML</p>
+                                    <p class="tag">SCSS</p>
+                                    <p class="tag">Collaboration</p>
+                                </div>
+                            </div>
+                            <div class="swiper" data-component="Carousel">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/bo/bo_desktop-accueil.jpg" alt="Accueil du site de Boxotel" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/bo/bo_desktop-chambre.jpg" alt="Section chambre dans la page d'accueil" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/bo/bo_desktop-accueil-chambre.jpg" alt="Accueil de la page chambre du site de Boxotel" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/bo/bo_desktop-chambres.jpg" alt="Page chambre du site de Boxotel" />
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr_secondary" />
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="interieur">
+                            <div class="left js-pinned">
+                                <h1>03 - JavaScript</h1>
+                                <p class="desc">
+                                    Nous avons programmé les
+                                    <span>comportements interactifs</span>
+                                    du site en JavaScript orienté objet (via TimTools) : carousel, scroll, menu plein écran, formulaire, composante YouTube, chacun prenant
+                                    en charge la logique liée à ses propres pages.
+                                </p>
+                                <div class="tags">
+                                    <p class="tag">JavaScript</p>
+                                    <p class="tag">TimTools</p>
+                                    <p class="tag">Programmation</p>
+                                </div>
+                            </div>
+                            <div class="gallery">
+                                <img src="assets/img/bo/bo_desktop-map.jpg" alt="Section carte sur l'accueil" />
+                                <img src="assets/img/bo/bo_desktop-spa.jpg" alt="Section spa sur page services" />
+                                <img src="assets/img/bo/bo_desktop-temoignages.jpg" alt="Section témoignages sur la page d'accueil" />
+                                <img src="assets/img/bo/bo_desktop-services.jpg" alt="Section service sur la page d'accueil" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr_secondary" />
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="interieur">
+                            <div class="left js-pinned">
+                                <h1>04 - Responsive des 4 pages</h1>
+                                <p class="desc">
+                                    Nous avons adapté chaque page en version
+                                    <span>mobile</span>
+                                    : j’ai pris en charge le responsive de
+                                    <span>l’accueil et de la liste des chambres</span>
+                                    , pendant qu’Olivier adaptait les pages
+                                    <span>Services et Détail d’une chambre.</span>
+                                </p>
+                                <div class="tags">
+                                    <p class="tag">Responsive</p>
+                                    <p class="tag">Mobile</p>
+                                    <p class="tag">Collaboration</p>
+                                </div>
+                            </div>
+                            <div class="gallery">
+                                <img src="assets/img/bo/bo_mobile-accueil.jpg" alt="Version mobile de l'accueil" />
+                                <img src="assets/img/bo/bo_mobile-chambre.jpg" alt="Version mobile de la section chambre de la page d'accueil" />
+                                <img src="assets/img/bo/bo_mobile-service.jpg" alt="Version mobile de la section services de la page d'accueil" />
+                                <img src="assets/img/bo/bo_mobile-temoignage.jpg" alt="Version mobile de la section témoignages de la page d'accueil" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr_secondary" />
+                <div class="wrapper">
+                    <div class="card">
+                        <h1>05 - Tests et débogage</h1>
+                        <div class="interieur defi">
+                            <div class="left">
+                                <p class="desc">
+                                    Nous avons terminé par une phase de
+                                    <span>tests et de débogage</span>
+                                    sur les différentes pages et tailles d’écran, en corrigeant les derniers ajustements visuels et les comportements JS avant la remise
+                                    finale sur GitHub.
+                                </p>
+                            </div>
+                            <div class="gallery">
+                                <img src="assets/img/bo/bo_main.png" alt="Organisation du Fichier main.js" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr_secondary" />
+            </section>
+
+            <section class="modale" data-component="Modale">
+                <div class="wrapper">
+                    <div class="modal">
+                        <span class="close">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-close"></use>
+                            </svg>
+                        </span>
+                        <div class="modalContent">
+                            <img src="" alt="" class="modalImg" />
+                            <span class="modaltxt"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="final">
+                <div class="wrapper">
+                    <div class="resultat">
+                        <h1>Résultat final</h1>
+                        <div class="video" data-component="Youtube" data-no-controls data-video-id="4Lx4RFSLZkI">
+                            <div class="video__media js-video"></div>
+                        </div>
+                    </div>
+                    <a href="index.html#projets" class="retour">
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-back"></use>
+                        </svg>
+                        <h3 href="index.html#projets" class="back">Tous les projets</h3>
+                    </a>
+                </div>
+            </section>
+            <hr class="hr_primary" />
+            <footer class="footer">
+                <div class="wrapper">
+                    <h2>On travaille ensemble? <span class="h2_footer">Je cherche un stage en création interactive.</span></h2>
+                    <ul class="socials">
+                        <a target="_blank" href="https://www.linkedin.com/in/yoan-robitaille-41281a43a/">
+                            <li class="social">
+                                <div class="social_icon">[in]</div>
+                                <div class="nom">LinkedIn</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="https://github.com/yoyorobi">
+                            <li class="social">
+                                <div class="social_icon">[gh]</div>
+                                <div class="nom">GitHub</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/@yoanrobitaille8711">
+                            <li class="social">
+                                <div class="social_icon">[yt]</div>
+                                <div class="nom">YouTube</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="mailto:yoan.robitaille@hotmail.com">
+                            <li class="social">
+                                <div class="social_icon">[@]</div>
+                                <div class="nom">E-mail</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="assets/cv/cv_yoan_robitaille_clair.pdf">
+                            <li class="social">
+                                <div class="social_icon">[cv]</div>
+                                <div class="nom">Curriculum vitae</div>
+                            </li>
+                        </a>
+                    </ul>
+                    <div class="credit">
+                        <p>© 2026 Yoan Robitaille</p>
+                        <p class="mini">Ce site a été conçu avec l’aide d’outils d’intelligence artificielle pour l’idéation visuelle, la rédaction en partie, ainsi que pour le débogage de certaines parties du code (JavaScript). L’intégration HTML/CSS, la structure du site et son adaptation responsive ont été réalisées par moi-même.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

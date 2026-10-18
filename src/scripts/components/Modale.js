@@ -1,7 +1,8 @@
 import { ScrollSmoother } from 'gsap/ScrollSmoother.js';
 
 export default class Modale {
-  constructor() {
+  constructor(element) {
+    this.element = element;
     this.smoother = ScrollSmoother.get();
     this.init();
   }
