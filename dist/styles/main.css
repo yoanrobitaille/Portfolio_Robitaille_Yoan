@@ -2250,10 +2250,15 @@ img.swipeimage {
 ====================================================================================================================================*/
 .presentation {
   padding: 50px 0;
-  display: flex;
 }
 .presentation img {
   border: 2px solid var(--color-border);
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 28%;
+     object-position: 50% 28%;
 }
 
 /*====================================================================================================================================
@@ -2397,13 +2402,16 @@ img.swipeimage {
 }
 .etapes .swiper {
   width: 100%;
-  height: 80vh;
+  height: 60vh;
 }
 .etapes .swiper .swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.etapes a {
+  text-decoration: underline;
 }
 
 .swiper-pagination-fraction {

@@ -1,0 +1,257 @@
+{% include '_partials/_header.html' %}
+<section class="projet_hero">
+    <div class="wrapper">
+        <div class="head">
+            <div class="start">
+                <h3>01</h3>
+                <svg class="icon icon--sm">
+                    <use xlink:href="#icon-square"></use>
+                </svg>
+            </div>
+            <h1>Projection murale interactive avec une Kinect</h1>
+        </div>
+
+        <p class="tag">Interactif</p>
+        <a href="https://github.com/yoyorobi/Projection-murale-interactive" target="_blank" class="voir">
+            Voir le projet
+            <svg class="icon icon--md">
+                <use xlink:href="#icon-Arrow"></use>
+            </svg>
+        </a>
+    </div>
+</section>
+
+<hr class="hr_secondary" />
+<section class="presentation">
+    <div class="wrapper">
+        <img src="assets/img/pi/pi_main.jpg" alt="Projection murale crops" />
+    </div>
+</section>
+
+<hr class="hr_primary" />
+
+<section class="info">
+    <div class="wrapper">
+        <div class="cards left">
+            <div class="card">
+                <h3>Contexte</h3>
+                <p>
+                    Dans le cadre de mon cours de Médias interactifs, à ma 6e session, notre travail final était de programmer une projection murale interactive
+                    qui bascule vers un second écran lorsque personne n’est présent.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Outils utilisés</h3>
+                <div class="imgs">
+                    <img src="assets/img/ps.png" alt="Photoshop" />
+                    <img src="assets/img/td.jpg" alt="TouchDesigner" />
+                </div>
+            </div>
+        </div>
+        <div class="cards right">
+            <div class="card">
+                <h3>Rôles</h3>
+                <p>Projet solo : conception, direction visuelle, programmation nodale et page web de présentation.</p>
+            </div>
+            <div class="card">
+                <h3>Crédits</h3>
+                <p>
+                    Conception, design et programmation : Yoan Robitaille
+                    <br />
+                    Idée originale : Ariane Lachance
+                </p>
+            </div>
+            <div class="card">
+                <h3>Utilisation d'IA</h3>
+                <p>
+                    L’intelligence artificielle a été utilisée en partie pour m’assister dans la programmation (TouchDesigner) ainsi que dans certains aspects
+                    du design de la page web de présentation.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="hr_secondary" />
+
+<section class="etapes" data-pin-items>
+    <div class="wrapper">
+        <div class="card">
+            <div class="interieur">
+                <div class="left js-pinned">
+                    <h1>01 - Idéation</h1>
+                    <p class="desc">
+                        Pour ce projet, je me suis inspiré de vidéos de danse trouvées sur les réseaux sociaux, mettant en scène des personnes habillées en
+                        <span>glow stick</span>
+                        dans le noir.
+                    </p>
+                    <div class="tags">
+                        <p class="tag">Recherche</p>
+                        <p class="tag">Inspiration</p>
+                        <p class="tag">Direction créative</p>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="assets/img/pi/pi_inspi1.jpg" alt="Dash de voiture 1" />
+                    <img src="assets/img/pi/pi_inspi2.jpg" alt="Dash de voiture 2" />
+                    <img src="assets/img/pi/pi_main.jpg" alt="Dash de voiture 3" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr_secondary" />
+    <div class="wrapper">
+        <div class="card">
+            <h1>02 - Développement</h1>
+            <div class="interieur2">
+                <div class="left2">
+                    <p class="desc">
+                        J’ai passé beaucoup de temps à trouver la meilleure façon de représenter
+                        <span>chaque partie du corps en néon,</span>
+                        en m’assurant que le rendu reste
+                        <span>cohérent</span>
+                        une fois animé.
+                    </p>
+                    <div class="tags">
+                        <p class="tag">Kinect</p>
+                        <p class="tag">Prog nodale</p>
+                        <p class="tag">Expérimentation</p>
+                    </div>
+                </div>
+                <div class="swiper" data-component="Carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/pi/pi_perso1.png" alt="Préparation des cadrans" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/pi/pi_corps.png" alt="Application des cadran avec fond" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/pi/pi_main.jpg" alt="Ajout du gaz/minutes" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/pi/pi_2perso.png" alt="Ajout des couleurs + max RPM" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr_secondary" />
+    <div class="wrapper">
+        <div class="card">
+            <div class="interieur">
+                <div class="left js-pinned">
+                    <h1>03 - Écran autonome</h1>
+                    <p class="desc">
+                        En m’inspirant d’un tutoriel YouTube de
+                        <a href="https://www.youtube.com/watch?v=dwh5CS_0EDs">Simon Alexander-Adams,</a>
+                        j’ai programmé un mode autonome qui s’active lorsque
+                        <span>personne n’est détecté devant l’écran</span>
+                        : un art
+                        <span>abstrait</span>
+                        génératif à l’aide de cubes en mouvement.
+                    </p>
+                    <div class="tags">
+                        <p class="tag">Kinect</p>
+                        <p class="tag">Détection de présence</p>
+                        <p class="tag">Génératif</p>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="assets/img/pi/pi_autonome.png" alt="Cadran des minutes / gaz" />
+                    <img src="assets/img/pi/pi_autonome_prog.png" alt="Cadran des secondes / RPM" />
+                    <img src="assets/img/pi/pi_noise_visuel.png" alt="Cadran des heures / vitesse" />
+                    <img src="assets/img/pi/pi_noiseseed.png" alt="Placement des aiguilles" />
+                    <video src="assets/img/pi/pi_autonome.mp4" muted autoplay loop></video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr_secondary" />
+    <div class="wrapper">
+        <div class="card">
+            <div class="interieur">
+                <div class="left js-pinned">
+                    <h1>04 - Seconde phase d’idéation</h1>
+                    <p class="desc">
+                        J’ai senti qu’il manquait quelque chose au projet, alors j’ai ajouté des
+                        <span>sabres laser</span>
+                        aux deux personnages, avec des
+                        <span>effets sonores</span>
+                        liés à leurs mouvements.
+                    </p>
+                    <div class="tags">
+                        <p class="tag">Itération</p>
+                        <p class="tag">Son</p>
+                        <p class="tag">Interaction</p>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="assets/img/pi/pi_lightsaber.png" alt="Overview du projet" />
+                    <img src="assets/img/pi/pi_lightsaber(1).png" alt="Programmation des secondes" />
+                    <img src="assets/img/pi/pi_background.png" alt="Programmation des heures" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr_secondary" />
+    <div class="wrapper">
+        <div class="card">
+            <h1>05 - Débogage</h1>
+            <div class="interieur defi">
+                <div class="left">
+                    <p class="desc">
+                        J’ai terminé en réglant les différents
+                        <span>bugs</span>
+                        rencontrés, notament le changement entre la page autonome et le personnage
+                    </p>
+                </div>
+                <div class="gallery">
+                    <img src="assets/img/pi/pi_switch.png" alt="Programmation des heures" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr_secondary" />
+</section>
+
+<section class="modale" data-component="Modale">
+    <div class="wrapper">
+        <div class="modal">
+            <span class="close">
+                <svg class="icon icon--lg">
+                    <use xlink:href="#icon-close"></use>
+                </svg>
+            </span>
+            <div class="modalContent">
+                <img src="" alt="" class="modalImg" />
+                <span class="modaltxt"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="final">
+    <div class="wrapper">
+        <div class="resultat">
+            <h1>Résultat final</h1>
+            <div class="video" data-component="Youtube" data-no-controls data-video-id="4Lx4RFSLZkI">
+                <div class="video__media js-video"></div>
+            </div>
+        </div>
+        <a href="index.html#projets" class="retour">
+            <svg class="icon icon--md">
+                <use xlink:href="#icon-back"></use>
+            </svg>
+            <h3 href="index.html#projets" class="back">Tous les projets</h3>
+        </a>
+    </div>
+</section>
+<hr class="hr_primary" />
+{% include '_partials/_footer.html' %}

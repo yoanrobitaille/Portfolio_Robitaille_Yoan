@@ -100,9 +100,12 @@
 
 .presentation {
     padding: 50px 0;
-    display: flex;
     img {
         border: 2px solid var(--color-border);
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        object-position: 50% 28%;
     }
 }
 
@@ -225,7 +228,7 @@
     }
     .swiper {
         width: 100%;
-        height: 80vh;
+        height: 60vh;
         // height: 100%;
         .swiper-slide {
             img {
@@ -234,6 +237,9 @@
                 object-fit: cover;
             }
         }
+    }
+    a {
+        text-decoration: underline;
     }
 }
 .swiper-pagination-fraction {
