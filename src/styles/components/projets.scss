@@ -17,8 +17,8 @@
         justify-content: space-between;
         align-items: center;
         padding: 48px 20px;
-        border-top: 1px solid var(--color-primary);
-        border-bottom: 1px solid var(--color-primary);
+        border-top: 1px solid var(--color-secondary);
+        border-bottom: 1px solid var(--color-secondary);
         @media (width <= $breakpoint-sm) {
             flex-direction: column;
             align-items: start;
@@ -34,13 +34,12 @@
         }
     }
 }
-
 img.swipeimage {
     position: fixed;
     top: 0;
     left: 0;
-    width: 550px;
-    height: 230px;
+    width: 440px;
+    height: 184px;
     object-fit: cover;
     transform: translateX(-50%) translateY(-50%);
     z-index: 9;

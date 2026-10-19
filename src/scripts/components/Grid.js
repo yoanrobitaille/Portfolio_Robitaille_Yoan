@@ -11,7 +11,7 @@ export default class Grid {
       radius: 130, // rayon d'influence du curseur (px)
       lineWidth: 1.3, // épaisseur des traits
       holdTime: 100, // temps (ms) où une cellule reste allumée avant de s'éteindre
-      fadeDuration: 350, // durée (ms) du fondu de sortie
+      fadeDuration: 175, // durée (ms) du fondu de sortie
       clickPulse: false, // onde au clic
       pulseSpeed: 450, // vitesse de l'onde (px/s)
       strokeOpacity: 0.4, // opacité des contours (0 à 1)

@@ -9,6 +9,12 @@ export default class ImgHover {
     const image = document.querySelector('img.swipeimage');
     if (!image) return;
 
+    const canHover = window.matchMedia('(hover:hover) and (pointer: fine)');
+    if (!canHover.matches) {
+      gsap.set(image, { display: 'none' });
+      return;
+    }
+
     gsap.set(image, { xPercent: -50, yPercent: -50, autoAlpha: 0 });
 
     const setX = gsap.quickTo(image, 'x', { duration: 0.4, ease: 'power3' });
@@ -33,7 +39,6 @@ export default class ImgHover {
       paused: true,
       onReverseComplete: () => document.removeEventListener('mousemove', align),
     });
-
     gsap.utils.toArray('.card').forEach((card) => {
       card.addEventListener('mouseenter', (e) => {
         image.src = card.dataset.img;

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap");
 /* ==========================================================================
    cover / tools
    ========================================================================== */
@@ -2117,8 +2117,8 @@ a.disabled {
   justify-content: space-between;
   align-items: center;
   padding: 48px 20px;
-  border-top: 1px solid var(--color-primary);
-  border-bottom: 1px solid var(--color-primary);
+  border-top: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-secondary);
 }
 @media (width <= 768px) {
   .projets .card {
@@ -2142,8 +2142,8 @@ img.swipeimage {
   position: fixed;
   top: 0;
   left: 0;
-  width: 550px;
-  height: 230px;
+  width: 440px;
+  height: 184px;
   -o-object-fit: cover;
      object-fit: cover;
   transform: translateX(-50%) translateY(-50%);
@@ -2422,6 +2422,12 @@ img.swipeimage {
     width: 100%;
   }
 }
+.etapes .gallery .prog {
+  height: 100%;
+}
+.etapes .gallery .affiche {
+  height: 100%;
+}
 .etapes video {
   max-width: 584px;
   max-height: 326px;
@@ -2475,11 +2481,11 @@ img.swipeimage {
 /*====================================================================================================================================
 ======== MODALE ===========
 ====================================================================================================================================*/
-.gallery img {
+.gallery img:not(.prog) {
   cursor: pointer;
   transition: 0.3s all cubic-bezier(0.19, 1, 0.22, 1);
 }
-.gallery img:hover {
+.gallery img:not(.prog):hover {
   transform: scale(0.95);
 }
 
@@ -2573,6 +2579,84 @@ img.swipeimage {
   }
 }
 .final .retour:hover {
+  gap: 20px;
+  border-color: var(--color-secondary);
+}
+
+.victoire {
+  padding: 50px 0;
+}
+.victoire .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.victoire .resultat {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.victoire .resultat .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (width <= 1024px) {
+  .victoire .resultat .content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+.victoire .resultat .content .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.victoire .resultat .content h3 {
+  text-transform: uppercase;
+}
+.victoire .resultat .media {
+  height: 70vh;
+  width: 100%;
+}
+@media (width <= 1024px) {
+  .victoire .resultat .media {
+    height: 30vh;
+  }
+}
+.victoire .resultat .media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.victoire .resultat .desc {
+  border-top: 1px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  padding: 20px 20px;
+}
+.victoire .resultat .desc span {
+  color: var(--color-secondary);
+  font-weight: 800;
+}
+.victoire .retour {
+  padding-bottom: 5px;
+  border-bottom: var(--color-primary) 2px solid;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.victoire .retour h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+@media (width <= 768px) {
+  .victoire .retour h3 {
+    font-size: 25px;
+  }
+}
+.victoire .retour:hover {
   gap: 20px;
   border-color: var(--color-secondary);
 }
