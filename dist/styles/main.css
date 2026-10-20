@@ -2628,6 +2628,8 @@ img.swipeimage {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 100% 40%;
+     object-position: 100% 40%;
 }
 .victoire .resultat .desc {
   border-top: 1px solid var(--color-primary);
@@ -2926,5 +2928,29 @@ textarea {
   background-color: var(--color-secondary);
   transform: scaleY(1);
   will-change: transform;
+}
+
+.error {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.error .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.error .wrapper .voir {
+  font-size: 20px;
+  padding: 8px 16px;
+  border: var(--color-secondary) 2px solid;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--color-secondary);
+  color: var(--color-black);
+  font-weight: 500;
+}
+.error .wrapper .voir:hover {
+  background-color: var(--color-bg-primary);
+  color: var(--color-secondary);
 }
 /*# sourceMappingURL=main.css.map */

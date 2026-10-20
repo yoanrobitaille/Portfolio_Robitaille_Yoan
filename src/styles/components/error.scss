@@ -1,0 +1,23 @@
+.error {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .voir {
+            font-size: 20px;
+            padding: 8px 16px;
+            border: var(--color-secondary) 2px solid;
+            width: fit-content;
+            background-color: var(--color-secondary);
+            color: var(--color-black);
+            font-weight: 500;
+            &:hover {
+                background-color: var(--color-bg-primary);
+                color: var(--color-secondary);
+            }
+        }
+    }
+}
