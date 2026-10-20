@@ -216,6 +216,24 @@
             padding: 5px 10px;
         }
     }
+    .position {
+        .swiper-slide:nth-child(1) img {
+            object-position: 100% -60px;
+
+            @media (width <= $breakpoint-sm) {
+                object-position: unset;
+            }
+        }
+        .swiper-slide:nth-child(3) img {
+            object-position: 100% -100px;
+            @media (width <= $breakpoint-sm) {
+                object-position: 100% -60px;
+            }
+            @media (width <= $breakpoint-xs) {
+                object-position: 100% -30px;
+            }
+        }
+    }
     .gallery {
         display: flex;
         flex-direction: column;
@@ -254,7 +272,7 @@
         max-height: 60vh;
         height: 100%;
         @media (width <= $breakpoint-md) {
-            max-height: 30vh;
+            max-height: 50vh;
         }
         .swiper-slide {
             width: 100%;

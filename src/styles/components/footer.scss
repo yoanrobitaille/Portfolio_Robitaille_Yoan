@@ -34,8 +34,20 @@
         }
         .credit {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+            @media (width <= $breakpoint-sm) {
+                flex-direction: column;
+                align-items: start;
+            }
+            .voir_ia {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding: 0 10px 8px;
+                border-bottom: 2px solid var(--color-border);
+            }
         }
     }
 }

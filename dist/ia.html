@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Yoan Robitaille</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body data-component="Scrolly">
+    <div class="cursor" data-component="Cursor"></div>
+
+    <div class="transition" data-component="Transition">
+        <div class="transition-row row-1">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="transition-row row-2">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+
+
+    <header class="header" data-component="Header" data-always-show>
+        <div class="wrapper">
+            <a href="index.html" class="logo">YR</a>
+            <nav class="nav">
+                <ul>
+                    <a href="index.html" class="hub_mobile">
+                        <li>Mon hub</li>
+                    </a>
+                    <a href="propos.html">
+                        <li>À propos</li>
+                    </a>
+                    <a href="" class="scrollto">
+                        <li>Projets</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+                <h3>|</h3>
+                <div class="reseaux">
+                    <a target="_blank" href="https://www.linkedin.com/in/yoan-robitaille-41281a43a/">
+                        <li class="social">
+                            <div class="social_icon">[in]</div>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://github.com/yoanrobitaille">
+                        <li class="social">
+                            <div class="social_icon">[gh]</div>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/y.o.a.n_1802/">
+                        <li class="social">
+                            <div class="social_icon">[ig]</div>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/@yoanrobitaille">
+                        <li class="social">
+                            <div class="social_icon">[yt]</div>
+                        </li>
+                    </a>
+                </div>
+            </nav>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <hr class="hr_secondary">
+    </header>
+
+    <section class="modale" data-component="Modale">
+        <div class="wrapper">
+            <div class="modal">
+                <span class="close">
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </span>
+                <div class="modalContent">
+                    <img src="" alt="" class="modalImg" />
+                    <span class="modaltxt"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <canvas id="cursor-grid" data-component="Grid"></canvas>
+    <img class="swipeimage" alt="">
+    <div id="smooth-wrapper" data-component="Scroller" data-pin-items="true">
+        <div id="smooth-content">
+
+
+
+            <!-- 
+        mettre background sur texte en hover oranges
+        /// Enlever le sroller end sur fiche projets
+        /// Tags dans 02 préparation du visuel
+        ///  02 changer les boutons de carousell et autoplay maybe
+        /// changer opacité du grid 
+        /// bordure bas sur photo a propos
+        Sur vidéo de vélo et auto le son en fade in
+        /// sur mobile rajouter padding sur hero
+        à propos, sur grandeur lapotop mettre photo a droite et texte en bas
+        /// descendre gtr
+        préparation visuel pixelisé
+
+        -->
+
+            <section class="ia">
+                <div class="wrapper">
+                    <h1>Utilisation de l'IA</h1>
+                    <div class="layout" data-component="Drawer">
+                        <ul class="liste">
+                            <li class="item">
+                                <h3 class="voir_titre">
+                                    01 - Ma position
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-plus"></use>
+                                    </svg>
+                                </h3>
+                                <div class="voir_description">
+                                    <div class="voir_description__inner">
+                                        <div class="voir_description__content">
+                                            <p>
+                                                J’utilise l’IA comme outil d’assistance, jamais comme remplacement. Tout ce qui est ici a été relu, testé et adapté par moi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <h3>
+                                    <h3 class="voir_titre">
+                                        02 - Fait par moi
+                                        <svg class="icon icon--md">
+                                            <use href="#icon-plus"></use>
+                                        </svg>
+                                    </h3>
+                                </h3>
+                                <div class="voir_description">
+                                    <div class="voir_description__inner">
+                                        <div class="voir_description__content">
+                                            <p>Le HTML, le CSS (SCSS) et le responsive de tout le site, la structure des pages, les animations et l’intégration.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <h3>
+                                    <h3 class="voir_titre">
+                                        03 - Idéation visuelle
+                                        <svg class="icon icon--md">
+                                            <use href="#icon-plus"></use>
+                                        </svg>
+                                    </h3>
+                                </h3>
+                                <div class="voir_description">
+                                    <div class="voir_description__inner">
+                                        <div class="voir_description__content">
+                                            <p class="small">
+                                                L’IA m’a aidé à explorer des pistes pour la direction visuelle et la mise en page, comme le style sombre et les choix de
+                                                composition. J’ai gardé et adapté ce qui correspondait à mon identité.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <h3>
+                                    <h3 class="voir_titre">
+                                        04 - Rédaction
+                                        <svg class="icon icon--md">
+                                            <use href="#icon-plus"></use>
+                                        </svg>
+                                    </h3>
+                                </h3>
+                                <div class="voir_description">
+                                    <div class="voir_description__inner">
+                                        <div class="voir_description__content">
+                                            <p class="small">
+                                                L’IA m’a assisté pour rédiger et reformuler une partie des textes du site, notamment les contenus des fiches projets, que
+                                                j’ai ensuite relus et corrigés.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <h3>
+                                    <h3 class="voir_titre">
+                                        05 - Débogage et code
+                                        <svg class="icon icon--md">
+                                            <use href="#icon-plus"></use>
+                                        </svg>
+                                    </h3>
+                                </h3>
+                                <div class="voir_description">
+                                    <div class="voir_description__inner">
+                                        <div class="voir_description__content">
+                                            <p class="small">
+                                                L’IA m’a aidé à comprendre et corriger certains problèmes de code, comme les épinglages au défilement (pins) sur mobile, le
+                                                comportement des liens et des transitions, et l’effet de survol sur les appareils tactiles. Je suis toujours resté
+                                                responsable du code final.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="wrapper">
+                    <h2>On travaille ensemble? <span class="h2_footer">Je cherche un stage en création interactive.</span></h2>
+                    <ul class="socials">
+                        <a target="_blank" href="https://www.linkedin.com/in/yoan-robitaille-41281a43a/">
+                            <li class="social">
+                                <div class="social_icon">[in]</div>
+                                <div class="nom">LinkedIn</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="https://github.com/yoanrobitaille">
+                            <li class="social">
+                                <div class="social_icon">[gh]</div>
+                                <div class="nom">GitHub</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/@yoanrobitaille">
+                            <li class="social">
+                                <div class="social_icon">[yt]</div>
+                                <div class="nom">YouTube</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="mailto:yoan.robitaille@hotmail.com">
+                            <li class="social">
+                                <div class="social_icon">[@]</div>
+                                <div class="nom">E-mail</div>
+                            </li>
+                        </a>
+                        <a target="_blank" href="assets/cv/cv_yoan_robitaille_clair.pdf">
+                            <li class="social">
+                                <div class="social_icon">[cv]</div>
+                                <div class="nom">Curriculum vitae</div>
+                            </li>
+                        </a>
+                    </ul>
+                    <div class="credit">
+                        <p>© 2026 Yoan Robitaille</p>
+                        <a href="ia.html" class="voir_ia">
+                            Utilisation d'IA
+                            <svg class="icon icon--mdm">
+                                <use href="#icon-Arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

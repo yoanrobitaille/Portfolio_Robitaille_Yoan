@@ -253,6 +253,11 @@
 // }
 .propos_gallery {
     padding: 50px 0;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
     .gallerie1 {
         display: grid;
         grid-template-columns: repeat(9, 1fr);
