@@ -14,13 +14,6 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    @media (max-width: $breakpoint-xs) {
-        gap: 0px;
-
-        & > :first-child {
-            border-top: 1px solid rgba($color: #566467, $alpha: 0.35);
-        }
-    }
 }
 .item {
     padding-left: 0;
@@ -32,16 +25,8 @@
 
     cursor: pointer;
 
-    &.is-active {
-        @media (max-width: $breakpoint-xs) {
-            border: 0px solid rgba(0, 0, 0, 0);
-        }
-    }
-
     @media (max-width: $breakpoint-xs) {
         background-color: inherit;
-
-        border-bottom: 1px solid rgba($color: #566467, $alpha: 0.35);
         border-radius: 0;
     }
 }
@@ -74,13 +59,9 @@
 
     .is-active & {
         box-shadow: 0px 0px 0px -3px rgba(0, 0, 0, 0.5);
-        @media (max-width: $breakpoint-xs) {
-            color: var(--color-text-light);
-        }
     }
     @media (max-width: $breakpoint-xs) {
-        padding: 18px 0;
-        color: var(--color-text-secondaire-light);
+        padding: 18px inherit;
 
         font: normal 600 20px/120% var(--font-secondary);
     }
@@ -111,7 +92,6 @@
 
     p {
         @media (max-width: $breakpoint-xs) {
-            color: var(--color-text-secondaire-light);
             font-size: var(--font-size-content);
 
             font-weight: 400;
@@ -129,6 +109,6 @@
     display: flex;
     padding: 15px;
     @media (max-width: $breakpoint-xs) {
-        padding: 0px;
+        padding: 0px inherit;
     }
 }

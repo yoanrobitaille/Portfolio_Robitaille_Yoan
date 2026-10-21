@@ -3016,14 +3016,6 @@ textarea {
   padding: 0;
   list-style-type: none;
 }
-@media (max-width: 425px) {
-  .liste {
-    gap: 0px;
-  }
-  .liste > :first-child {
-    border-top: 1px solid rgba(86, 100, 103, 0.35);
-  }
-}
 
 .item {
   padding-left: 0;
@@ -3033,14 +3025,8 @@ textarea {
   cursor: pointer;
 }
 @media (max-width: 425px) {
-  .item.is-active {
-    border: 0px solid rgba(0, 0, 0, 0);
-  }
-}
-@media (max-width: 425px) {
   .item {
     background-color: inherit;
-    border-bottom: 1px solid rgba(86, 100, 103, 0.35);
     border-radius: 0;
   }
 }
@@ -3071,14 +3057,8 @@ textarea {
   box-shadow: 0px 0px 0px -3px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 425px) {
-  .is-active .voir_titre {
-    color: var(--color-text-light);
-  }
-}
-@media (max-width: 425px) {
   .voir_titre {
-    padding: 18px 0;
-    color: var(--color-text-secondaire-light);
+    padding: 18px inherit;
     font: normal 600 20px/120% var(--font-secondary);
   }
 }
@@ -3099,7 +3079,6 @@ textarea {
 }
 @media (max-width: 425px) {
   .voir_description p {
-    color: var(--color-text-secondaire-light);
     font-size: var(--font-size-content);
     font-weight: 400;
     line-height: 155%;
@@ -3117,7 +3096,7 @@ textarea {
 }
 @media (max-width: 425px) {
   .voir_description__content {
-    padding: 0px;
+    padding: 0px inherit;
   }
 }
 /*# sourceMappingURL=main.css.map */
