@@ -310,7 +310,7 @@
 
 .gallery img:not(.prog) {
     cursor: pointer;
-    transition: 0.3s all $ease-out-expo;
+    transition: transform 0.3s $ease-out-expo;
     &:hover {
         transform: scale(0.95);
     }

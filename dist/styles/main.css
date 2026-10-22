@@ -1690,6 +1690,21 @@ a.disabled {
 }
 
 /*====================================================================================================================================
+======== BARRE DE PROGRESSION ===========
+====================================================================================================================================*/
+.header__progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-secondary);
+  transform: scaleX(0);
+  transform-origin: left center;
+  pointer-events: none;
+}
+
+/*====================================================================================================================================
 ======== HR ===========
 ====================================================================================================================================*/
 .hr_secondary {
@@ -1750,7 +1765,7 @@ a.disabled {
   align-items: center;
   gap: 10px;
   align-self: flex-start;
-  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: gap 0.3s cubic-bezier(0.19, 1, 0.22, 1), border-color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .hub .hub_contenu .btn:hover {
   gap: 20px;
@@ -1764,6 +1779,7 @@ a.disabled {
 .hub .hub_contenu .media {
   width: 426px;
   height: 426px;
+  position: relative;
 }
 @media (width <= 1024px) {
   .hub .hub_contenu .media {
@@ -1836,6 +1852,7 @@ a.disabled {
 .hero .wrapper .media {
   height: 502px;
   width: 486px;
+  position: relative;
   border-bottom: 4px solid var(--color-border);
 }
 @media (width <= 1024px) {
@@ -2053,6 +2070,9 @@ a.disabled {
   flex-direction: column;
   gap: 5px;
 }
+.propos_gallery .gallerie1 .media {
+  overflow: hidden;
+}
 .propos_gallery .gallerie1 img {
   height: 257.57px;
   width: 100%;
@@ -2164,8 +2184,8 @@ img.swipeimage {
   position: fixed;
   top: 0;
   left: 0;
-  width: 440px;
-  height: 184px;
+  width: 560px;
+  height: 240px;
   -o-object-fit: cover;
      object-fit: cover;
   transform: translateX(-50%) translateY(-50%);
@@ -2531,7 +2551,7 @@ img.swipeimage {
 ====================================================================================================================================*/
 .gallery img:not(.prog) {
   cursor: pointer;
-  transition: 0.3s all cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .gallery img:not(.prog):hover {
   transform: scale(0.95);
@@ -2978,6 +2998,20 @@ textarea {
   will-change: transform;
 }
 
+/*====================================================================================================================================
+======== BALAYAGE DES PHOTOS ===========
+====================================================================================================================================*/
+.media__reveal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  transform: scaleX(0);
+  pointer-events: none;
+}
+
 .error {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -3024,7 +3058,7 @@ textarea {
   padding-left: 0;
   border: var(--color-secondary) 2px solid;
   background-color: var(--color-bg-secondary);
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background-color 0.5s cubic-bezier(0.19, 1, 0.22, 1), border-color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   cursor: pointer;
 }
 @media (max-width: 425px) {
@@ -3034,13 +3068,14 @@ textarea {
   }
 }
 
-.icon {
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+.item .icon {
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   transform: rotate(0);
 }
-.is-active .icon {
+.is-active .item .icon {
   transform: rotate(-45deg);
 }
+
 @media (max-width: 425px) {
   .icon {
     width: 13px;
@@ -3074,6 +3109,9 @@ textarea {
   font-family: var(--font-secondary);
   transition: grid-template-rows 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), visibility 0s linear 0.5s;
 }
+.voir_description span {
+  font-weight: 700;
+}
 .is-active .voir_description {
   grid-template-rows: 1fr;
   opacity: 1;
@@ -3102,4 +3140,3 @@ textarea {
     padding: 0px inherit;
   }
 }
-/*# sourceMappingURL=main.css.map */

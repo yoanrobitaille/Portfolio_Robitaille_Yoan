@@ -52,7 +52,10 @@
             align-items: center;
             gap: 10px;
             align-self: flex-start;
-            transition: all 0.3s $ease-out-expo;
+            // Pas de "all" : l'apparition du bouton est animée par GSAP
+            transition:
+                gap 0.3s $ease-out-expo,
+                border-color 0.3s $ease-out-expo;
             &:hover {
                 gap: 20px;
                 border-color: var(--color-secondary);
@@ -64,6 +67,7 @@
         .media {
             width: 426px;
             height: 426px;
+            position: relative;
             @media (width<= $breakpoint-md) {
                 order: -1;
                 width: 358px;

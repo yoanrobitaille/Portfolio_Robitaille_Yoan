@@ -10,6 +10,7 @@ import ImgHover from './components/ImgHover.js';
 import Header from './components/Header.js';
 import Transition from './components/Transition.js';
 import Drawer from './components/Drawer.js';
+import Animations from './components/Animations.js';
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
@@ -26,6 +27,7 @@ export default class ComponentFactory {
       Header,
       Transition,
       Drawer,
+      Animations,
     };
     this.init();
   }

@@ -21,7 +21,10 @@
 
     background-color: var(--color-bg-secondary);
 
-    transition: all 0.5s $ease-out-expo;
+    // Pas de "all" : sinon la transition CSS se bat avec l'apparition GSAP
+    transition:
+        background-color 0.5s $ease-out-expo,
+        border-color 0.5s $ease-out-expo;
 
     cursor: pointer;
 
@@ -31,14 +34,17 @@
     }
 }
 
-.icon {
-    transition: all 0.5s $ease-out-expo;
+// La rotation reste limitée aux « + » des tiroirs, sinon elle bloque les icônes animées par GSAP
+.item .icon {
+    transition: transform 0.5s $ease-out-expo;
     transform: rotate(0);
 
     .is-active & {
         transform: rotate(-45deg);
     }
+}
 
+.icon {
     @media (max-width: $breakpoint-xs) {
         width: 13px;
         height: 13px;
@@ -78,7 +84,9 @@
         grid-template-rows 0.5s $ease-out-expo,
         opacity 0.5s $ease-out-expo,
         visibility 0s linear 0.5s;
-
+    span {
+        font-weight: 700;
+    }
     .is-active & {
         grid-template-rows: 1fr;
         opacity: 1;

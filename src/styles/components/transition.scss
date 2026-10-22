@@ -25,3 +25,19 @@
         }
     }
 }
+
+/*====================================================================================================================================
+======== BALAYAGE DES PHOTOS ===========
+====================================================================================================================================*/
+
+// Bloc orange qui passe sur les photos de moi (même couleur que la transition de page)
+.media__reveal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    transform: scaleX(0);
+    pointer-events: none;
+}

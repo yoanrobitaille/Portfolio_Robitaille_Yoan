@@ -17,7 +17,8 @@ export default class Scroller {
     this.scroller = ScrollSmoother.create({
       smooth: 1.5,
       effects: true,
-      smoothTouch: 0.1,
+      // Scroll natif sur cell : le lissage au toucher faisait laguer
+      smoothTouch: false,
 
       ease: 'expo.out',
     });
