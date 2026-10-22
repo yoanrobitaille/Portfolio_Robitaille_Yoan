@@ -15,6 +15,9 @@
         @media (width <= $breakpoint-md) {
             grid-template-columns: 1fr;
         }
+        .display {
+            line-height: 90%;
+        }
         .contenu {
             display: flex;
             flex-direction: column;

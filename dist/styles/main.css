@@ -1802,6 +1802,9 @@ a.disabled {
     grid-template-columns: 1fr;
   }
 }
+.hero .wrapper .display {
+  line-height: 90%;
+}
 .hero .wrapper .contenu {
   display: flex;
   flex-direction: column;
