@@ -308,14 +308,15 @@
 ======== MODALE ===========
 ====================================================================================================================================*/
 
-.gallery img:not(.prog) {
-    cursor: pointer;
-    transition: transform 0.3s $ease-out-expo;
-    &:hover {
-        transform: scale(0.95);
+@media (width >= $breakpoint-sm) {
+    .gallery img:not(.prog) {
+        cursor: pointer;
+        transition: transform 0.3s $ease-out-expo;
+        &:hover {
+            transform: scale(0.95);
+        }
     }
 }
-
 .modal {
     position: fixed;
     height: 100%;

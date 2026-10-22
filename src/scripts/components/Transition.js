@@ -9,7 +9,12 @@ export default class Transition {
       const ease = 'power4.inOut';
       document.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', (event) => {
-          if (link.target === '_blank') {
+          if (
+            link.target === '_blank' ||
+            event.ctrlKey ||
+            event.metaKey ||
+            event.shiftKey
+          ) {
             return;
           } else {
             event.preventDefault();
@@ -66,6 +71,14 @@ export default class Transition {
           });
         });
       }
+      window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {
+          gsap.set('.block', { visibility: 'visible' });
+          revealTransition().then(() => {
+            gsap.set('.block', { visibility: 'hidden' });
+          });
+        }
+      });
     });
   }
 }

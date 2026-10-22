@@ -21,7 +21,8 @@
         .contenu {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 32px;
             @media (width <= $breakpoint-md) {
                 justify-content: unset;
                 gap: 15px;
@@ -41,8 +42,8 @@
             }
         }
         .media {
-            height: 502px;
-            width: 486px;
+            height: 450px;
+            width: 450px;
             position: relative;
             border-bottom: 4px solid var(--color-border);
             &.desktop {
@@ -233,28 +234,6 @@
 ======== GALLERIE PHOTO ===========
 ====================================================================================================================================*/
 
-// .gallery {
-//     padding: 50px 0;
-//     .gallerie1 {
-//         display: grid;
-//         grid-template-columns: 1fr 2fr 1.5fr;
-//         gap: 20px;
-//         .card {
-//             display: flex;
-//             flex-direction: column;
-//             gap: 5px;
-//         }
-//         img {
-//             height: 257.57px;
-//             width: 100%;
-//             object-fit: cover;
-//         }
-//     }
-//     .gallerie2 {
-//         margin-top: 20px;
-//         grid-template-columns: 2fr 1.5fr 1fr;
-//     }
-// }
 .propos_gallery {
     padding: 50px 0;
     .wrapper {

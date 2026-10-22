@@ -22,6 +22,8 @@ export default class Modale {
 
     images.forEach((image) => {
       image.addEventListener('click', () => {
+        if (window.innerWidth <= 768) return;
+
         modalImg.src = image.src;
         modalTxt.innerHTML = image.alt;
         modal.classList.add('appear');

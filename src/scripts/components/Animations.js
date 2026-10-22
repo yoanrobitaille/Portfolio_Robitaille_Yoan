@@ -298,11 +298,15 @@ export default class Animations {
     this.element.querySelectorAll('.etapes .card').forEach((card) => {
       this.highlight(card.querySelector('.desc'));
 
-      this.reveal(card.querySelectorAll('.desc, .tags .tag'), {
-        y: 30,
-        autoAlpha: 0,
-        stagger: 0.08,
-      }, card);
+      this.reveal(
+        card.querySelectorAll('.desc, .tags .tag'),
+        {
+          y: 30,
+          autoAlpha: 0,
+          stagger: 0.08,
+        },
+        card,
+      );
 
       // La galerie apparaît d'un bloc (pas un déclencheur par image)
       this.reveal(
