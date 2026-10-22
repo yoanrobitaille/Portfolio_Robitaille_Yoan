@@ -75,34 +75,11 @@ export default class Scroller {
     });
   }
 
-  /*initHoriz() {
-    const sectionHoriz = this.element.querySelector('.js-horiz');
-
-    const panels = sectionHoriz.querySelectorAll('.js-panel');
-    const nbPanels = panels.length - 1;
-    const buffer = 200;
-
-    gsap.to(panels, {
-      xPercent: -100 * nbPanels,
-      ease: 'none',
-      scrollTrigger: {
-        pin: true,
-        pinSpacing: false,
-        trigger: sectionHoriz,
-        scrub: 1,
-        end: () => '+=' + (sectionHoriz.offsetWidth + buffer),
-      },
-    });
-  }*/
-
   setOptions() {
     if ('pinItems' in this.element.dataset) {
       this.options.hasPinItems = true;
       console.log('test');
       this.initPins();
     }
-    // if (this.element.querySelector('.js-horiz')) {
-    //   this.initHoriz();
-    // }
   }
 }
