@@ -42,12 +42,11 @@
     .is-active & {
         transform: rotate(-45deg);
     }
-}
-
-.icon {
-    @media (max-width: $breakpoint-xs) {
-        width: 13px;
-        height: 13px;
+    .icon {
+        @media (max-width: $breakpoint-xs) {
+            width: 13px;
+            height: 13px;
+        }
     }
 }
 

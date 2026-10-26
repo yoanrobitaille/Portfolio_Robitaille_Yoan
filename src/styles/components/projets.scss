@@ -33,7 +33,29 @@
             }
         }
     }
+    .win {
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .mobile {
+            display: none;
+            height: 2em;
+            width: 2em;
+            @media (width <= $breakpoint-xs) {
+                display: block;
+            }
+        }
+        .desk {
+            display: block;
+            @media (width <= $breakpoint-xs) {
+                display: none;
+            }
+        }
+    }
 }
+
 img.swipeimage {
     position: fixed;
     top: 0;

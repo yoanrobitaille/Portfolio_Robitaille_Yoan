@@ -2196,6 +2196,29 @@ a.disabled {
     flex-wrap: wrap;
   }
 }
+.projets .win h2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.projets .win .mobile {
+  display: none;
+  height: 2em;
+  width: 2em;
+}
+@media (width <= 425px) {
+  .projets .win .mobile {
+    display: block;
+  }
+}
+.projets .win .desk {
+  display: block;
+}
+@media (width <= 425px) {
+  .projets .win .desk {
+    display: none;
+  }
+}
 
 img.swipeimage {
   position: fixed;
@@ -2216,7 +2239,7 @@ img.swipeimage {
 ======== HERO ===========
 ====================================================================================================================================*/
 .projet_hero {
-  padding-top: 100px;
+  padding-top: 125px;
   padding-bottom: 50px;
 }
 .projet_hero .wrapper {
@@ -2242,7 +2265,6 @@ img.swipeimage {
 .projet_hero .head {
   display: flex;
   gap: 20px;
-  align-items: center;
 }
 .projet_hero .head .start {
   display: flex;
@@ -2316,6 +2338,7 @@ img.swipeimage {
 .info .card .imgs {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .info .gras {
   font-weight: 800;
@@ -3093,9 +3116,8 @@ textarea {
 .is-active .item .icon {
   transform: rotate(-45deg);
 }
-
 @media (max-width: 425px) {
-  .icon {
+  .item .icon .icon {
     width: 13px;
     height: 13px;
   }

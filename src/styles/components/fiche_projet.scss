@@ -3,7 +3,7 @@
 ====================================================================================================================================*/
 
 .projet_hero {
-    padding-top: 100px;
+    padding-top: 125px;
     padding-bottom: 50px;
     .wrapper {
         display: flex;
@@ -28,7 +28,7 @@
     .head {
         display: flex;
         gap: 20px;
-        align-items: center;
+        // align-items: center;
         .start {
             display: flex;
             align-items: center;
@@ -95,6 +95,7 @@
         .imgs {
             display: flex;
             gap: 10px;
+            flex-wrap: wrap;
         }
     }
     .gras {
